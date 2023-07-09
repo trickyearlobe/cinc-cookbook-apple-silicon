@@ -1,0 +1,10 @@
+name 'cinc-cookbook-apple-silicon'
+maintainer 'Richard Nixon'
+maintainer_email 'richard.nixon@btinternet.com'
+license 'All Rights Reserved'
+description 'An example of how to use test kitchen on Apple Silicon with Cinc'
+version '0.1.0'
+chef_version '>= 16.0'
+
+issues_url 'https://github.com/trickyearlobe/cinc-cookbook-apple-silicon/issues'
+source_url 'https://github.com/trickyearlobe/cinc-cookbook-apple-silicon'

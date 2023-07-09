@@ -1,0 +1,24 @@
+---
+driver:
+  name: vagrant
+  provider: parallels
+
+#  network:
+#    - ["forwarded_port", {guest: 80, host: 8080}]
+
+provisioner:
+  name: chef_zero
+  product_name: cinc
+  product_version: 18
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: tricky/rocky.9.2.aarch64
+
+suites:
+  - name: default
+    verifier:
+      inspec_tests:
+        - test/integration/default
